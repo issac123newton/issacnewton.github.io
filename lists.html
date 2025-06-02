@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+        /* Reusing the same styles as index.html */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+          nav {
+            background-color: #343a40;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #007bff;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        ul, ol {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        
+        ul li {
+            list-style-type: disc;
+        }
+        
+        ol li {
+            list-style-type: decimal;
+        }
+        
+        .list-container {
+            margin: 2rem 0;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+        .page-link-button {
+    /* Background/text like table data cells */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); ; /* or #f8f9fa if you prefer the page background */
+    color:white; /* Dark gray text like your table content */
+    border: 1px solid #ddd; /* Light gray border like cell lines */
+    
+    /* Keep existing layout */
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-link-button:hover {
+    background-color: #e6f2ff; /* Light blue hover like your table row hover */
+    color: #0066cc; /* Blue text on hover (optional) */
+}
+        /* Custom icon styling */
+.list-icon {
+    width: 24px;        /* Adjust size as needed */
+    height: 24px;
+    margin-right: 12px; /* Space between icon and text */
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+.styled-list li:hover .list-icon {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>HTML Lists</h1>
+    </header>
+     <nav>
+        <a href="index.html">Home</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="lists.html">HTML Lists</a>
+    </nav>
+    <main>
+        <p>HTML lists are used to group related items together. There are three main types of lists:</p>
+        
+        <div class="list-container">
+            <h2>1. Unordered Lists (&lt;ul&gt;)</h2>
+            <p>Used for items where the order doesn't matter (bulleted lists):</p>
+               <ul class="styled-list">
+    <li><img src="sports2.png" alt="Sports" class="list-icon"> Sports</li>
+    <li><img src="book.png" alt="Reading" class="list-icon"> Reading</li>
+    <li><img src="camera.png" alt="camera" class="list-icon"> camera</li>
+    <li><img src="painting.png" alt="Painting" class="list-icon"> Painting</li>
+</ul>
+        
+        </div>
+        
+        <div class="list-container">
+            <h2>2. Ordered Lists (&lt;ol&gt;)</h2>
+            <p>Used when items need to be in a specific order (numbered lists):</p>
+            <ol>
+                <li>Wake up at 7:00 AM</li>
+                <li>Have breakfast</li>
+                <li>Attend online classes</li>
+                <li>Practice hobby for 1 hour</li>
+                <li>Complete homework</li>
+            </ol>
+        </div>
+        
+        <div class="list-container">
+            <h2>3. Description Lists (&lt;dl&gt;)</h2>
+            <p>Used for terms and their descriptions:</p>
+            <dl>
+                <dt>Photography</dt>
+                <dd>The art of capturing light with a camera to create images</dd>
+                
+                <dt>Basketball</dt>
+                <dd>A team sport where two teams compete to score points by shooting a ball through a hoop</dd>
+                
+                <dt>Painting</dt>
+                <dd>The practice of applying paint to a surface to create artwork</dd>
+            </dl>
+        </div>
+    </main>
+      <div class="page-links" style="margin: 2rem auto; text-align: center;">
+        <a href="index.html" class="page-link-button">← Go to first web page </a><br>
+        <a href="table.html" class="page-link-button">Go to second web page →</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Student Hobbies Portal. All rights reserved.</p>
+         <a href="#top" style="color: white; text-decoration: none;">↑ Back to Top</a>
+    </footer>
+</body>
+</html>
